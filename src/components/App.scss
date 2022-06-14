@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri;
+  background-color: #F4F4F4;
+}
+
+header {
+  height: 80px;
+  padding: 20px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: #212529;
+  background-color: #fff;
+}
+
+.nav-area {
+  display: flex;
+  justify-content: space-between;
+
+  &_logo {
+    &_wrap {
+      // @media only screen and (min-width: 1024px)  {
+        display: flex;
+        align-items: center;
+      // }
+    }
+  }
+  
+  & .search-menu {
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    & input {
+      height: 40px;
+      // width: 525px;
+      border: 0.5px solid #9C9D9D;
+      border-radius: 30px;
+      font-family: 'Calibri';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #9C9D9D;
+      padding-left: 18px;
+
+      @media only screen and (max-width: 600px) and (min-width: 320px)  {
+        display: none;
+      }
+
+      @media only screen and (max-width: 1365px) and (min-width: 1024px)  {
+        width: 75.5%;
+      }
+
+      @media only screen and (min-width: 1366px)  {
+        width: 60%;
+      }
+      
+      @media only screen and (max-width: 1023px) and (min-width: 768px)  {
+        width: 38%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 65%;
+      }
+      @media only screen and (max-width: 600px) and (min-width: 320px)  {
+        width: auto;
+      }
+    }
+    & img  {
+      position: absolute;
+      left: 92.76%;
+      right: 0.38%;
+      top: 5%;
+      bottom: 5%;
+
+      @media only screen and (max-width: 600px) and (min-width: 320px)  {
+        left: 73.76%;
+      }
+
+      @media only screen and (min-width: 1366px)  {
+        left: 75.8%;
+        top: 3%;
+      }
+      
+      @media only screen and (max-width: 1365px) and (min-width: 1024px)  {
+        left: 80.76%;
+      }
+      @media only screen and (max-width: 768px) {
+        left: 73.76%;
+      }
+      @media only screen and (max-width: 600px) and (min-width: 320px)  {
+        left: 40.76%;
+      }
+    }
+  }
+
+  & .logo {
+    text-decoration: none;
+    font-size: 25px;
+    color: inherit;
+    margin-right: 20px;
+  }
+  
+    & .menus {
+      display: flex;
+      list-style: none;
+
+      @media only screen and (max-width: 600px) and (min-width: 320px)  {
+        margin-top: 1em;
+      }
+    }
+    .menu-items {
+      position: relative;
+      font-family: 'Calibri';
+      font-style: italic;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #9C9D9D;
+      text-align: center;
+      padding-right: 24px;
+
+      @media only screen and (max-width: 600px) and (min-width: 320px)  {
+        padding-left: 30px;
+        padding-right: 0;
+      }
+
+      &_title {
+        @media only screen and (max-width: 600px) and (min-width: 320px)  {
+          display: none;
+        }
+      }
+    
+        a {
+          display: block;
+          font-size: inherit;
+          color: inherit;
+          text-decoration: none;
+        }
+    
+        button {
+          font-family: 'Calibri';
+          font-style: italic;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          color: #9C9D9D;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          width: 100%;
+        }
+    
+        & .activeClass {
+            color: #000;
+        }
+        & .show li.menu-items {
+          background: #000;
+          color: #fff;
+          border-bottom: 1px solid #fff;
+          padding: 1rem 1rem;
+          text-align: left;
+    
+          a:hover {
+            color: #fff
+          }
+        }
+        & img {
+          width: 24px;
+          height: 24px;
+         }
+
+         & a:hover, & button:hover {
+          color: #000;
+         }
+         & .toggleicon {
+            display: none;
+
+            &.show {
+              color: #000;
+
+              ::before {
+                font-size: 20px;
+              }
+            }
+         }
+         .fa-caret-up:before {
+            font-size: 20px;
+        }
+    }
+}
+.dropdown {
+  width: 150px;
+  position: absolute;
+  right: 0;
+  left: -55px;
+  top: 55px;
+  box-shadow: 0 10px 15px -3px rgba(46, 41, 51, 0.08),
+    0 4px 6px -2px rgba(71, 63, 79, 0.16);
+  font-size: 0.875rem;
+  z-index: 9999;
+  min-width: 10rem;
+  // padding: 0.5rem 0 0;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  display: none;
+
+  @media only screen and (max-width: 600px) and (min-width: 320px)  {
+    left: -37px;
+    top: 39px;
+  }
+}
+
+.dropdown.show {
+  display: block;
+}

@@ -1,0 +1,20 @@
+{
+    "RecommendedFilters": [
+        {
+            "id": "0",
+            "label": "Lowest Price"
+        },
+        {
+            "id": "1",
+            "label": "Most Stock"
+        },
+        {
+            "id": "2",
+            "label": "Modal A-z"
+        },
+        {
+            "id": "3",
+            "label": "Code No."
+        }
+    ]
+}

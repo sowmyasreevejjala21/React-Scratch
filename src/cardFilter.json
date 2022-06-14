@@ -1,0 +1,56 @@
+{
+        "premiumBestSeller": {
+            "id": 1,
+            "name": "Continental - Contiecocontact 5",
+            "price": "340",
+            "image": "some_url",
+            "type": "SUV",
+            "dimensions": "205/55 R16 H",
+            "inStock": "yes",
+            "bestSeller": "Premium Bestseller",
+            "quantity": 0
+        },
+        "economyBestSeller": {
+            "id": 2,
+            "name": "Continental - Contiecocontact 5",
+            "price": "340",
+            "image": "",
+            "type": "SUV",
+            "dimensions": "205/55 R16 H",
+            "inStock": "yes",
+            "bestSeller": "Economy Bestseller",
+            "quantity": 0
+        },
+        "list": [
+            {
+                "id":1,
+                "name": "Continental PremiumContact™ 6",
+                "price": "340",
+                "image": "some_url",
+                "type": "SUV",
+                "dimensions": "195/55 R15 85V",
+                "inStock": "yes",
+                "quantity": 0
+            },
+            {
+                "id": 2,
+                "name": "Continental PremiumContact™ 6",
+                "price": "340",
+                "image": "some_url",
+                "type": "SUV",
+                "dimensions": "195/55 R15 85V",
+                "inStock": "limited",
+                "quantity": 0
+            },
+            {
+                "id": 3,
+                "name": "Continental PremiumContact™ 6",
+                "price": "340",
+                "image": "some_url",
+                "type": "SUV",
+                "dimensions": "195/55 R15 85V",
+                "inStock": "no",
+                "quantity": 0
+            }
+        ]
+}
